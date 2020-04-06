@@ -1,0 +1,26 @@
+<form class="filter-controls-wrapper" autocomplete="off" [formGroup]="filtersForm">
+  <mat-form-field class="name-field">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" placeholder="Your name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Genre</mat-label>
+    <mat-select formControlName="genre" (selectionChange)="genreChanged()">
+      <mat-option *ngFor="let genre of tableFacade.genres$ | async" [value]="genre">
+        {{ genre }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Year</mat-label>
+    <mat-select formControlName="year" (selectionChange)="yearChanged()">
+      <mat-option *ngFor="let year of tableFacade.years$ | async" [value]="year">
+        {{ year }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button type="button" color="warn" (click)="resetFitlers()">Reset</button>
+</form>
