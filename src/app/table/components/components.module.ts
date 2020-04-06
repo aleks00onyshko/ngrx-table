@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../shared';
 
 import { TableComponent } from './table';
 import { FiltersComponent } from './filters';
 import { SortControlsComponent } from './sort-controls';
 import { TableRowComponent } from './table-row';
-import { SharedModule } from '../../shared';
+import { GenreLabelComponent } from './genre-label';
 
 const COMPONENTS = [
   TableComponent,
   FiltersComponent,
   SortControlsComponent,
-  TableRowComponent
+  TableRowComponent,
+  GenreLabelComponent
 ];
 
 @NgModule({

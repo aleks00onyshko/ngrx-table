@@ -1,0 +1,21 @@
+<ng-container [ngSwitch]="genre">
+  <div class="genre" *ngSwitchCase="Genre.Horror" style="background-color: slategrey;">
+    <span>{{ genre }}</span>
+  </div>
+
+  <div class="genre" *ngSwitchCase="Genre.Comedy" style="background-color: darkkhaki;">
+    <span>{{ genre }}</span>
+  </div>
+
+  <div class="genre" *ngSwitchCase="Genre.DarkComedy" style="background-color: darkgoldenrod;">
+    <span>{{ genre }}</span>
+  </div>
+
+  <div class="genre" *ngSwitchCase="Genre.Drama" style="background-color: purple;">
+    <span>{{ genre }}</span>
+  </div>
+
+  <div class="genre" *ngSwitchCase="Genre.Tragedy" style="background-color: lightcoral;">
+    <span>{{ genre }}</span>
+  </div>
+</ng-container>

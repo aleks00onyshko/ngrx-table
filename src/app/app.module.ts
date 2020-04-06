@@ -23,7 +23,6 @@ import { TableModule } from './table/table.module';
     TableModule,
     BrowserAnimationsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
