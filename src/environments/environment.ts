@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  serialsUrl: 'http://localhost:3000/serials',
+  genresUrl: 'http://localhost:3000/genres',
+  yearsUrl: 'http://localhost:3000/years'
 };
 
 /*

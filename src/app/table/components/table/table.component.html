@@ -1,0 +1,11 @@
+<div class="table-wrapper">
+  <app-table-filters></app-table-filters>
+
+  <div class="table">
+    <app-table-sort-controls></app-table-sort-controls>
+    <app-table-row
+      *ngFor="let serial of tableFacade.serials$ | async"
+      [serial]="serial"
+    ></app-table-row>
+  </div>
+</div>
